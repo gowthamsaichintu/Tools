@@ -1,0 +1,10 @@
+testcase: FeetOnDashboard
+pipeline: OPOS
+
+validations:
+
+  # BASE: check at least one person is tracked with valid keypoints
+  - layer: base
+    signal: m_isValid        # keypoint 0 (e.g. head/nose) validity for person[0]
+    expected: true
+
